@@ -1,0 +1,158 @@
+/** 
+ * Default layout - Painel Web
+ * @author Alisson da Costa <alisson@procon.pb.gov.br>
+ */
+ 
+ #layout, #layout * { 
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+/* #layout-content { height: 40%; float: left; }
+#senha-container { height: 100%; } */
+
+/* 
+ * Senha Atual - Ultima senha chamada
+ */
+#mensagem {
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#mensagem span {
+    padding: 10px 29px;
+    display: inline-block;
+}
+
+#senha {
+    font-weight: bold;
+    text-align: left;
+    font-size: -5px;
+    margin-left: 35px;
+}
+
+/* local */
+
+#local {
+    text-align: center;    
+    /* float: left; */
+    height: 30px;
+    padding: 5px;
+}
+
+#local-numero {        
+    font-weight: bold;
+    text-align: center;
+    /* float: left; */
+    height: 30px;
+    padding: 5px;
+}
+
+/*
+ * Ultimas senhas chamadas
+ */
+#historico {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#historico .senhas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+#historico .senhas div.senha-chamada {
+    text-align: center;
+    display: inline-block;
+}
+
+#historico .senhas div.senha-chamada div.senha { 
+    font-weight: bold; 
+    text-align: center;
+}
+/* div.local - retirado */
+#historico .senhas div.senha-chamada {
+    text-align: center;
+}
+
+
+/* cores - atendimento normal */
+#layout.normal { background-color: #0055a3; }
+#layout.normal #mensagem span { color: #fff; }
+#layout.normal #senha span { color: #eeff00; }
+#layout.normal #local span { color: #fff; }
+#layout.normal #local-numero span { color: #fff; }
+#layout.normal #historico .senhas { background: rgba(0, 0, 0, .4); }
+#layout.normal #historico .senhas * { color: #fff; }
+
+/* cores - atendimento prioritario */
+#layout.prioridade { background-color: #fff; }
+#layout.prioridade #senha-container span { color: #d2322d; }
+#layout.prioridade #historico .senhas { background-color: #f1f1f1; }
+#layout.prioridade #historico .senhas * { color: #333; }
+
+/* cores - atendimento prioritario quando no historico */
+#historico .senhas .prioridade * { color: #d2322d !important; }
+
+/* fonts */
+
+#mensagem span {
+    font-size: 6vw;
+}
+
+#senha span {
+    font-size: 15vw;
+
+}
+
+#local span {
+    font-size: 5vw;
+}
+
+#local-numero span {
+   font-size: 7em;
+}
+
+.senha-chamada .senha span {
+    font-size: 8vw;
+}
+
+.senha-chamada .local span {
+    font-size: 5vw;
+}
+    
+#procon {
+    float: right;
+    width: 70%;
+    border: thin silver solid;
+    margin: 1em;
+    /*padding: 1em;*/   
+}
+
+/* 800x600 */
+@media only screen and (max-width: 800px) {
+    
+    #historico {
+        display: none;
+    }
+
+    #local {
+        text-align: left;    
+        /* float: left; */
+        height: 30px;
+        padding: 5px 35px;
+    }
+    
+    #local-numero {        
+        font-weight: bold;
+        text-align: left;
+        /* float: left; */
+        height: 30px;
+        padding: 5px 35px;
+    }
+    
+    
+}

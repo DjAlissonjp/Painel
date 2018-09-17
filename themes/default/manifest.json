@@ -1,0 +1,11 @@
+{
+    "name": "Default",
+    "description": "Layout padrão e responsivo do Painel Web",
+    "authors": [
+        {
+            "name": "Alisson da Costa", 
+            "email": "alisson@procon.pb.gov.br",
+            "homepage": "http://procon.pb.gov.br"
+        }
+    ]
+}
