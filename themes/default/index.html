@@ -2,10 +2,12 @@
     <div class="row">
         <div class="col-md-4">
             <div id="senha-container">
-                <div id="mensagem">
-                    <span>{{ ultima.mensagem }}</span>
-                </div>
-                <div class="row">
+                <!-- <div class="row"> -->
+                    <div id="mensagem">
+                        <span>{{ ultima.mensagem }}</span>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="row"> -->
                     <div class="col-xs-5 col-sm-5 col-md-5">
                         <div id="senha" class="blink">
                             <span>
@@ -16,18 +18,19 @@
                             <span>{{ ultima.local }}&nbsp;{{ ultima.numeroLocal }}</span>
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
         <div class="col-md-8">
             <iframe id="procon" width="700" height="600px" src="https://www.youtube.com/embed/?listType=playlist&list=PLkeBfDq204ZHMIL3CV9hliwVyIXncAjND&autoplay=1&loop=1"
-            frameborder="0" allowfullscreen></iframe>
+                frameborder="0" allowfullscreen></iframe>
             <!-- <iframe id="ytplayer" type="text/html" width="720" height="405"
             src="https://www.youtube.com/embed/?listType=playlist&list=PLkeBfDq204ZHMIL3CV9hliwVyIXncAjND&autoplay=1&playsinline=1"
             frameborder="0" allowfullscreen>                 -->
         </div>
     </div>
     <div class="row">
+
         <div id="historico">
             <div class="senhas">
                 <div class="col-sm-3 senha-chamada {{ senha.styleClass }}" ng-repeat="senha in historico | limitTo: 4">

@@ -37,13 +37,15 @@
 #local {
     text-align: center;    
     /* float: left; */
+    width: 300px;
     height: 30px;
     padding: 5px;
+    margin-left: 35px;
 }
 
 #local-numero {        
     font-weight: bold;
-    text-align: center;
+    text-align: right;
     /* float: left; */
     height: 30px;
     padding: 5px;
@@ -74,16 +76,19 @@
     text-align: center;
 }
 /* div.local - retirado */
-#historico .senhas div.senha-chamada {
+#historico .senhas div.senha-chamada div.local {
     text-align: center;
 }
 
+/* .ng-binding {
+    color: #0055a3;
+} */
 
 /* cores - atendimento normal */
 #layout.normal { background-color: #0055a3; }
 #layout.normal #mensagem span { color: #fff; }
 #layout.normal #senha span { color: #eeff00; }
-#layout.normal #local span { color: #fff; }
+#layout.normal #local span { color: #fff; float: left; }
 #layout.normal #local-numero span { color: #fff; }
 #layout.normal #historico .senhas { background: rgba(0, 0, 0, .4); }
 #layout.normal #historico .senhas * { color: #fff; }
