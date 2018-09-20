@@ -4,18 +4,18 @@
             <div id="senha-container">
                 <!-- <div class="row"> -->
                     <div id="mensagem">
-                        <span>{{ ultima.mensagem }}</span>
+                        <span class="efeitosombreado">{{ ultima.mensagem }}</span>
                     </div>
                 <!-- </div> -->
                 <!-- <div class="row"> -->
                     <div class="col-xs-5 col-sm-5 col-md-5">
                         <div id="senha" class="blink">
-                            <span>
+                            <span class="efeitosombreado">
                                 {{ ultima.texto }} <br>
                             </span>
                         </div>
                         <div id="local" class="local">
-                            <span>{{ ultima.local }}&nbsp;{{ ultima.numeroLocal }}</span>
+                            <span class="efeitosombreado" >{{ ultima.local }}&nbsp;{{ ultima.numeroLocal }}</span>
                         </div>
                     </div>
                 <!-- </div> -->
@@ -35,10 +35,10 @@
             <div class="senhas">
                 <div class="col-sm-3 senha-chamada {{ senha.styleClass }}" ng-repeat="senha in historico | limitTo: 4">
                     <div class="senha">
-                        <span>{{ senha.texto }}</span>
+                        <span class="efeitosombreado">{{ senha.texto }}</span>
                     </div>
                     <div class="local">
-                        <span>{{ senha.local }}: {{ senha.numeroLocal }}</span>
+                        <span class="efeitosombreado">{{ senha.local }}: {{ senha.numeroLocal }}</span>
                     </div>
                 </div>
             </div>
